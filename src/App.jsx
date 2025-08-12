@@ -1,6 +1,8 @@
+
 import Background from "./components/Background";
 import Configurations from "./components/configurations";
 import FloatingLabels from "./components/FloatingLabels";
+
 
 
 function App() {
@@ -9,8 +11,12 @@ function App() {
    <>
   {/* <Background/> */}
 
+
   <Configurations/>
   <FloatingLabels/>
+
+  <Stories/>
+
    </>
   )
 }
