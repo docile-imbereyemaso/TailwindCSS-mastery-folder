@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@plugin 'tailwind-scrollbar';
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
   --font-primary: "Poppins", "sans-serif";
@@ -8,7 +10,9 @@
 }
 
 @layer base{
-    
+    html{
+        @apply scrollbar-hover:scrollbar-thumb-indigo-500 scrollbar-active:scrollbar-thumb-indigo-400 h-32 scrollbar scrollbar-thumb-indigo-700 scrollbar-track-gray-300 overflow-y-scroll hover:scrollbar-hover:scrollbar-thumb-amber-500
+    }
 }
 
 @layer components{
