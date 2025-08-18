@@ -15,6 +15,7 @@ const DarkMode = () => {
   const handleDarkMode = () => {
     setDarkMode((prev) => !prev);
   };
+  
 
   return (
     <div className={darkMode ? "dark" : ""}>
